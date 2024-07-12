@@ -24,7 +24,7 @@ requirements:
     - numpy
   run:
     - python
-    - {{ pin_compatible('numpy') }}
+    - numpy
 
 test:
   imports:
