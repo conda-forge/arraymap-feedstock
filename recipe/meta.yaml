@@ -1,5 +1,5 @@
 {% set name = "arraymap" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8a303d035f42038429b18d901828389ffee468efed991eb1c5e500508ed4981b
+  sha256: af1aa15f9f0c799888326561275052b4ea709b0a3a2ff58d01c55a447f8b1213
 
 build:
   number: 0
-  skip: true  # [py<39]  
+  skip: true  # [py<39]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
