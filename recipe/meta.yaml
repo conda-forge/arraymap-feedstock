@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: af1aa15f9f0c799888326561275052b4ea709b0a3a2ff58d01c55a447f8b1213
 
 build:
@@ -19,6 +19,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
+    - setuptools
     - python
     - pip
     - numpy
